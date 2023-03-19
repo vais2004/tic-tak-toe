@@ -1,6 +1,5 @@
 // Function called whenever user tab on any box
 function myfunc() {
- 
     // Setting DOM to all boxes or input field
     var b1, b2, b3, b4, b5, b6, b7, b8, b9;
     b1 = document.getElementById("b1").value;
@@ -12,7 +11,6 @@ function myfunc() {
     b7 = document.getElementById("b7").value;
     b8 = document.getElementById("b8").value;
     b9 = document.getElementById("b9").value;
- 
     // Checking if Player X won or not and after
     // that disabled all the other fields
     if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
@@ -29,7 +27,7 @@ function myfunc() {
     }
     else if ((b1 == 'x' || b1 == 'X') && (b4 == 'x' ||
         b4 == 'X') && (b7 == 'x' || b7 == 'X')) {
-        document.getElementById('print')
+        document.getElementById('print')                                                                                                                                                
         .innerHTML = "Player X won";
         document.getElementById("b2").disabled = true;
         document.getElementById("b3").disabled = true;
@@ -37,7 +35,6 @@ function myfunc() {
         document.getElementById("b6").disabled = true;
         document.getElementById("b8").disabled = true;
         document.getElementById("b9").disabled = true;
- 
         window.alert('Player X won');
     }
     else if ((b7 == 'x' || b7 == 'X') && (b8 == 'x' ||
@@ -112,7 +109,6 @@ function myfunc() {
         document.getElementById("b9").disabled = true;
         window.alert('Player X won');
     }
- 
     // Checking of Player X finish
     // Checking for Player 0 starts, Is player 0 won or
     // not and after that disabled all the other fields
